@@ -28,10 +28,12 @@ window.onload = function() {
     document.body.style.backgroundColor = '#fff';
     document.getElementById('toggleButton').innerHTML = 'Turn off';
     // document.getElementById('lastState').innerHTML = 'Last turn on: ' + localStorage.getItem('lastTime');
+     document.getElementById('lastState').innerHTML = localStorage.getItem('lastTime');
   } else {
     document.body.style.backgroundColor = '#333';
     document.getElementById('toggleButton').innerHTML = 'Turn on';
     // document.getElementById('lastState').innerHTML = 'Last turn off: ' + localStorage.getItem('lastTime');
+    document.getElementById('lastState').innerHTML = localStorage.getItem('lastTime');
   }
 }
 
